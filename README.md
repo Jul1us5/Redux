@@ -18,6 +18,15 @@
 ├─── template
 ├─── index.js
 
+    .
+    ├── build                   # Compiled files (alternatively `dist`)
+    ├── docs                    # Documentation files (alternatively `doc`)
+    ├── src                     # Source files (alternatively `lib` or `app`)
+    ├── test                    # Automated tests (alternatively `spec` or `tests`)
+    ├── tools                   # Tools and utilities
+    ├── LICENSE
+    └── README.md
+
 
   WEBPACK commands:
   - npm run serve | run project localhost at 9000 port
