@@ -37,5 +37,6 @@
   MAIN:
   - lint implementation
   - Redux implementation
+  - Redux DevTools
 
   

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { addSubTitleAction } from "../store/subTitleReducer";
+import { addTitleAction } from "../store/titleReducer";
 
 const UseAppCustomHook = () => {
   const dispatch = useDispatch();
@@ -25,9 +27,9 @@ const UseAppCustomHook = () => {
     e.preventDefault();
 
     if (formValue.title)
-      dispatch({ type: "ADD_TITLE", payload: formValue.title });
+      dispatch(addTitleAction(formValue.title));
     if (formValue.subTitle)
-      dispatch({ type: "ADD_SUB_TITLE", payload: formValue.subTitle });
+      dispatch(addSubTitleAction(formValue.subTitle));
 
     formValue.title = "";
     formValue.subTitle = "";
