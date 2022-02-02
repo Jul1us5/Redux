@@ -1,11 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import style from "./App.module.scss";
 import PropTypes from "prop-types";
 import UseAppCustomHook from "../../hooks/useAppCustomHook.jsx";
 
 const App = () => {
 
-  const { handleSubmit, handleChange, title, subTitle, formValue } = UseAppCustomHook()
+  const { handleSubmit, handleChange, handleApiData, title, subTitle, formValue, data } = UseAppCustomHook()
+
+
+  useEffect(() => {
+    if (data !== null) console.log(data)
+  },[data])
+
 
   return (
     <div className={style.wrapper}>
@@ -22,6 +28,7 @@ const App = () => {
           <button type="submit">submit</button>
         </form>
       </section>
+      <button className={style.press} onClick={handleApiData}>Call api</button>
     </div>
   );
 };

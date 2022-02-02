@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { apiData } from "../api/data.js";
 import { addSubTitleAction } from "../store/subTitleReducer";
 import { addTitleAction } from "../store/titleReducer";
 
@@ -7,6 +8,7 @@ const UseAppCustomHook = () => {
   const dispatch = useDispatch();
   const title = useSelector((state) => state.title.title);
   const subTitle = useSelector((state) => state.subTitle.subTitle);
+  const data = useSelector((state) => state.apiData.data);
 
   const [formValue, setFormValue] = useState({
     title: "",
@@ -35,7 +37,11 @@ const UseAppCustomHook = () => {
     formValue.subTitle = "";
   };
 
-  return { handleSubmit, handleChange, title, subTitle, formValue };
+  const handleApiData = () => {
+    dispatch(apiData());
+  }
+
+  return { handleSubmit, handleChange, handleApiData, title, subTitle, formValue, data };
 };
 
 export default UseAppCustomHook;
