@@ -5,20 +5,21 @@
   - I try use best practices from React, using CSS modules, custom hooks, No-Side effects, code splitting with React.lazy and Suspense, pure component..
   
   STRUCTURE:
+  
     .
-    ├── src                   
-    ├─── components                   
-    ├──── App                     
-    ├───── App.jsx
-    ├──── App                     
-    ├───── App.jsx                   
-    ├───── App.modules.scss                  
-    ├───── reset.scss
-    ├───── var.scss              
-    ├─── hooks                
-    ├──── useAppCustomHook.jsx 
-    ├─── template                 
-    ├─── index.js 
+    ├── src                        # 
+    ├─── components                #    
+    ├──── App                      #
+    ├───── App.jsx                 #
+    ├──── App                      #                 
+    ├───── App.jsx                 #           
+    ├───── App.modules.scss        #                
+    ├───── reset.scss              #
+    ├───── var.scss                #    
+    ├─── hooks                     #
+    ├──── useAppCustomHook.jsx     #
+    ├─── template                  #   
+    ├─── index.js                  #
 
 
   WEBPACK commands:
