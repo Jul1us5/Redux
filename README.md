@@ -8,17 +8,22 @@
   
     .
     ├── src                        # 
-    ├─── components                #    
+    ├─── components                #
     ├──── App                      #
     ├───── App.jsx                 #
-    ├──── App                      #                 
-    ├───── App.jsx                 #           
-    ├───── App.modules.scss        #                
+    ├──── App                      #
+    ├───── App.jsx                 #
+    ├───── App.modules.scss        #
     ├───── reset.scss              #
-    ├───── var.scss                #    
+    ├───── var.scss                #
     ├─── hooks                     #
     ├──── useAppCustomHook.jsx     #
-    ├─── template                  #   
+    ├─── store                     #
+    ├──── index.js                 #
+    ├──── subTitleReducer.jsx      #
+    ├──── titleReducer.jsx         #
+    ├─── template                  #
+    ├──── index.html               #
     ├─── index.js                  #
 
 

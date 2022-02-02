@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 
 const UseAppCustomHook = () => {
   const dispatch = useDispatch();
-  const title = useSelector((state) => state.title);
-  const subTitle = useSelector((state) => state.subTitle);
+  const title = useSelector((state) => state.title.title);
+  const subTitle = useSelector((state) => state.subTitle.subTitle);
 
   const [formValue, setFormValue] = useState({
     title: "",
