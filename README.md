@@ -7,7 +7,9 @@
   STRUCTURE:
   
     .
-    ├── src                        # 
+    ├── src                        #
+    ├─── api                       # 
+    ├──── data.js                  #
     ├─── components                #
     ├──── App                      #
     ├───── App.jsx                 #
@@ -19,6 +21,7 @@
     ├─── hooks                     #
     ├──── useAppCustomHook.jsx     #
     ├─── store                     #
+    ├──── apiDataReducer.jsx       #
     ├──── index.js                 #
     ├──── subTitleReducer.jsx      #
     ├──── titleReducer.jsx         #
@@ -35,8 +38,9 @@
   - npm run build | build project in Production mode | Minify CSS, HTML, JS and clears comments.
 
   MAIN:
-  - lint implementation
+  - Lint implementation
   - Redux implementation
   - Redux DevTools
+  - Middleware | thunk 
 
   
