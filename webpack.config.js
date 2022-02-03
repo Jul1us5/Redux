@@ -116,7 +116,12 @@ module.exports = {
         port: process.env.REACT_APP_PORT,
         historyApiFallback: true,
         contentBase: './',
-        hot: true
+        hot: true,
+        // headers: {
+        //     "Access-Control-Allow-Origin": "*",
+        //     "credentials": 'same-origin'
+        // },
+
 
     },
     performance: {

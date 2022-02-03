@@ -3,6 +3,7 @@
   ABOUT:
   - I use this webpack bundle with react. This webpack bundle have eslint, unit JEST test's, Redux state management implementation.
   - I try use best practices from React, using CSS modules, custom hooks, No-Side effects, code splitting with React.lazy and Suspense, pure component..
+  - Cross-origin requests.
   
   STRUCTURE:
   
@@ -42,5 +43,6 @@
   - Redux implementation
   - Redux DevTools
   - Middleware | thunk 
+  - Enable cross-origin requests to anywhere
 
   
